@@ -55,7 +55,7 @@ div.jumbotron {
 		h1 {
 			margin: 20px 10px;
 			color: $text-color;
-			font-family: Titillium Web;
+			font-family: Poppins;
 			font-weight: 900;
 			font-size: 4.5rem;
 			line-height: 4.5rem;
