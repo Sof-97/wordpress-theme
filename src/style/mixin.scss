@@ -1,0 +1,11 @@
+@mixin menu($orientation){
+    list-style: none;
+    display: flex;
+    flex-direction: #{$orientation};
+    li{
+        cursor: pointer;
+        a{
+            text-decoration: none;
+        }
+    }
+}
