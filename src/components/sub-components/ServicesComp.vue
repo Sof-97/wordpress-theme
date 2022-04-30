@@ -30,7 +30,7 @@
 					<i class="fa-solid fa-briefcase"></i>
 					<i class="fa-solid fa-arrow-right"></i>
 					</div>
-					<h4>Audit & Assurance</h4>
+					<h4>Financial Advisory</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 				</div>
 				<!-- Card -->
@@ -39,7 +39,7 @@
 					<i class="fa-solid fa-chart-simple"></i>
 					<i class="fa-solid fa-arrow-right"></i>
 					</div>
-					<h4>Audit & Assurance</h4>
+					<h4>Analytics and M&A</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 				</div>
 				<!-- Card -->
@@ -48,7 +48,7 @@
 					<i class="fa-solid fa-plane-up"></i>
 					<i class="fa-solid fa-arrow-right"></i>
 					</div>
-					<h4>Audit & Assurance</h4>
+					<h4>Middle Marketing</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 				</div>
 				<!-- Card -->
@@ -57,7 +57,7 @@
 					<i class="fa-solid fa-earth-europe"></i>
 					<i class="fa-solid fa-arrow-right"></i>
 					</div>
-					<h4>Audit & Assurance</h4>
+					<h4>Legal Consulting</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 				</div>
 				<!-- Card -->
@@ -66,7 +66,7 @@
 					<i class="fa-solid fa-inbox"></i>
 					<i class="fa-solid fa-arrow-right"></i>
 					</div>
-					<h4>Audit & Assurance</h4>
+					<h4>Regulatory Risk</h4>
 					<p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
 				</div>
 			</div>
@@ -105,6 +105,9 @@ div.services {
 				background-color: rgba($fountain-blue, $alpha: 0.2);
 			}
 		}
+		p{
+			color: $lorem;
+		}
 		button {
 			color: $elf-green;
 			margin: 10px;
@@ -135,6 +138,8 @@ div.cards{
 	& > div{
 		h4{
 			margin: 10px 0 15px 0;
+			color: $text-color;
+			font-size: 1.4rem;
 		}
 		div{
 		margin-bottom: 15px;
