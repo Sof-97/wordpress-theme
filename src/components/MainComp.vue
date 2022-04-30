@@ -6,6 +6,8 @@
         <ManagementComp/>
         <TeamComp :teamMembers="teamMembers"/>
         <EditorialComp :newsData="newsData"/>
+        <NewsletterComp/>
+        
     </div>
 </template>
 <script>
@@ -15,6 +17,8 @@ import ServicesComp from "./sub-components/ServicesComp.vue"
 import ManagementComp from "./sub-components/ManagementComp.vue"
 import TeamComp from "./sub-components/TeamComp.vue"
 import EditorialComp from "./sub-components/EditorialComp.vue"
+import NewsletterComp from "./sub-components/NewsletterComp.vue"
+
 export default {
     name: 'MainComp',
     components:{
@@ -24,6 +28,7 @@ export default {
         ManagementComp,
         TeamComp,
         EditorialComp,
+        NewsletterComp,
     },
     props:{
         teamMembers: Array,
