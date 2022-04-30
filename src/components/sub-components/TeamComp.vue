@@ -11,7 +11,7 @@
 				</p>
 				<div class="teams">
 					<div :key="i" v-for="(item, i) in teamMembers">
-						<img src="../../assets/img/team-1.jpg" alt="" />
+						<img :src="require(`../../assets/img${item.img}`)" alt="" />
 						<div class="info">
 							<h5>{{ item.name }}</h5>
 							<h6>{{ item.role }}</h6>
@@ -89,6 +89,7 @@ div.container {
 			.teams {
 				color: #fff;
 				display: flex;
+				justify-content: space-between;
 				flex-wrap: wrap;
 				margin-top: 30px;
 			}

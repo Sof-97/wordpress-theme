@@ -4,7 +4,7 @@
 			<HeaderComp :contacts="this.contacts" :menu="menuMainPage"/>
     </header>
 		<main>
-			<MainComp :teamMembers="this.teamMembers"/>
+			<MainComp :teamMembers="this.teamMembers" :newsData="newsData"/>
 		</main>
 		<footer>
 			<FooterComp/>
@@ -60,8 +60,29 @@ export default {
 					role: 'ceo & president',
 					img: '/team-4.jpg',
 				},
+			],
+			newsData: [
+				{
+					title: 'Increasing creativity is possible for everyone',
+					img: '/news-1.jpg',
+				},
+				{
+					title: 'Because market research is part of the business plan',
+					img: '/news-2.jpg',
+				},
+				{
+					title: 'Working from home is now a trend',
+					img: '/news-3.jpg',
+				},
+				{
+					title: 'PlaceHolder 1',
+					img: '/news-4.jpg',
+				},
+				{
+					title: 'PlaceHolder 2',
+					img: '/news-5.jpg',
+				},
 			]
-
 		}
 	}
 };
