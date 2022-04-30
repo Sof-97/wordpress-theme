@@ -21,8 +21,12 @@
 				</select>
 			</div>
 			<div>
-				<button>get in touch</button>
-				<button>read more</button>
+				<button>
+					<a href="#"> get in touch </a>
+				</button>
+				<button>
+					<a href="#">read more</a>
+				</button>
 			</div>
 		</div>
 	</div>
@@ -49,7 +53,7 @@ div.jumbotron {
 		margin-left: 55%;
 		line-height: 3rem;
 		h4 {
-            margin-left: 10px;
+			margin-left: 10px;
 			color: $fountain-blue;
 		}
 		h1 {
@@ -81,18 +85,23 @@ div.jumbotron {
 			}
 			+ div {
 				display: flex;
-                button{
-                    text-transform: uppercase;
-                    color: $elf-green;
-                    margin: 10px;
-                    border: 1px solid $elf-green;
-                    border-radius: 5px;
-                    padding: 10px 15px;
-                    &:first-child{
-                        color: #fff;
-                        background-color: $elf-green;
-                    }
-                }
+				button {
+					text-transform: uppercase;
+					margin: 10px;
+					border: 1px solid $elf-green;
+					border-radius: 5px;
+					padding: 10px 15px;
+					&:first-child {
+						background-color: $elf-green;
+						a {
+							color: #fff;
+						}
+					}a {
+						color: $elf-green;
+						text-decoration: none;
+					}
+					
+				}
 			}
 		}
 	}
