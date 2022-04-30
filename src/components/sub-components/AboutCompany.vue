@@ -91,10 +91,10 @@ div.about {
 		&_right {
 			display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
             line-height: 1.4rem;
             > *{
-                flex-basis: 50%;
+                flex-basis: calc(100%/2 - 20px);
             }
             h4{
                 font-family: Montserrat;

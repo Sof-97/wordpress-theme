@@ -4,7 +4,7 @@
 			<HeaderComp :contacts="this.contacts" :menu="menuMainPage"/>
     </header>
 		<main>
-			<MainComp/>
+			<MainComp :teamMembers="this.teamMembers"/>
 		</main>
 		<footer>
 			<FooterComp/>
@@ -39,6 +39,28 @@ export default {
 				'blog',
 				'get in touch',
 			],
+			teamMembers: [
+				{
+					name: 'David Cooper',
+					role: 'cto & co-founder',
+					img: '/team-1.jpg',
+				},
+				{
+					name: 'Oliver Jones',
+					role: 'chief procurement',
+					img: '/team-3.jpg',
+				},
+				{
+					name: 'Emma Lopez',
+					role: 'chief marketing',
+					img: '/team-2.jpg',
+				},
+				{
+					name: 'T. Johnson',
+					role: 'ceo & president',
+					img: '/team-4.jpg',
+				},
+			]
 
 		}
 	}
