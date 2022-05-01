@@ -1,13 +1,13 @@
 <template>
 	<div id="app">
 		<header>
-			<HeaderComp :contacts="this.contacts" :menu="menuMainPage"/>
+			<HeaderComp :contacts="contacts" :menu="menuMainPage"/>
     </header>
 		<main>
-			<MainComp :teamMembers="this.teamMembers" :newsData="newsData"/>
+			<MainComp :teamMembers="teamMembers" :newsData="newsData"/>
 		</main>
 		<footer>
-			<FooterComp/>
+			<FooterComp :contacts="contacts" :menuFooterAbout="menuFooterAbout" :menuFooterServices="menuFooterServices" :menuFooterSupport="menuFooterSupport" />
 		</footer>
 	</div>
 </template>
@@ -29,6 +29,7 @@ export default {
 			contacts: {
 				phone: "+1 (305) 1234-5768",
 				email: "hello@exampleemail.com",
+				address: "Main Avenue, 987",
 			},
 			menuMainPage: [
 				'home',
@@ -82,6 +83,30 @@ export default {
 					title: 'PlaceHolder 2',
 					img: '/news-5.jpg',
 				},
+			],
+			menuFooterAbout:[
+				'The Company',
+				'Institutional',
+				'Social & Events',
+				'Innovation',
+				'Environment',
+				'Technology'
+			],
+			menuFooterServices: [
+				'Audi & Assurance',
+				'Financial Advisory',
+				'Analytics M&A',
+				'Middle Marketing',
+				'Legal Consulting',
+				'Regulatory Risk'
+			],
+			menuFooterSupport: [
+				'Responsibility',
+				'Terms of Use',
+				'About Cookies',
+				'Privacy Policy',
+				'Accessibility',
+				'Information'
 			]
 		}
 	}
