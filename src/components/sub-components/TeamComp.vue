@@ -11,7 +11,10 @@
 				</p>
 				<div class="teams">
 					<div :key="i" v-for="(item, i) in teamMembers">
-						<img :src="require(`../../assets/img${item.img}`)" alt="" />
+						<img
+							:src="require(`../../assets/img${item.img}`)"
+							alt=""
+						/>
 						<div class="info">
 							<h5>{{ item.name }}</h5>
 							<h6>{{ item.role }}</h6>
@@ -57,31 +60,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../style/variables.scss";
+@import "../../style/mixin.scss";
 div.container {
 	background-color: $woodsmoke;
-	padding: 80px 0;
 	div.row {
 		display: flex;
+		@include container;
 		justify-content: space-between;
-		width: 65%;
-		margin: 0 auto;
 		&_left {
 			width: 65%;
-			h5 {
-				color: $fountain-blue;
-			}
-			h2 {
-				color: #fff;
-				font-family: Poppins;
-				font-weight: 700;
-				font-size: 4rem;
-				margin: 15px 0;
-				span {
-					background-color: $company;
-					border-radius: 5px;
-					padding: 5px 10px;
-				}
-			}
+			@include sectionTitle(rgba($elf-green, 0.2), #fff, #fff);
 			p {
 				color: #fff;
 				opacity: 0.8;
@@ -117,18 +105,18 @@ div.container {
 					}
 					div {
 						display: flex;
-                        i{
-                            font-size: 1.2rem;
-                            margin: 0 5px;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: $fountain-blue;  
-                            border-radius: 50%;
-                            background-color: rgba($elf-green, $alpha: 0.4);
-                            width: 2.2rem;
-                            height: 2.2rem;
-                        }
+						i {
+							font-size: 1.2rem;
+							margin: 0 5px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							color: $fountain-blue;
+							border-radius: 50%;
+							background-color: rgba($elf-green, $alpha: 0.4);
+							width: 2.2rem;
+							height: 2.2rem;
+						}
 					}
 				}
 			}

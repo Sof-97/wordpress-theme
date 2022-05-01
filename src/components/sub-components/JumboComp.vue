@@ -39,11 +39,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style/variables.scss";
+@import "../../style/mixin.scss";
 
 div.jumbotron {
 	display: flex;
 	align-items: center;
-	height: 80vh;
+	height: calc(100vh - 40px);
 	background-image: url("../../assets/img/bg-6.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -86,21 +87,14 @@ div.jumbotron {
 			+ div {
 				display: flex;
 				button {
-					text-transform: uppercase;
+					@include button($elf-green);
 					margin: 10px;
-					border: 1px solid $elf-green;
-					border-radius: 5px;
-					padding: 10px 15px;
-					&:first-child {
-						background-color: $elf-green;
+					&:last-child {
+						background-color: transparent;
 						a {
-							color: #fff;
+							color: $elf-green;
 						}
-					}a {
-						color: $elf-green;
-						text-decoration: none;
 					}
-					
 				}
 			}
 		}

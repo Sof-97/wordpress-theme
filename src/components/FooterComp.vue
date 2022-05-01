@@ -66,7 +66,7 @@ export default {
 		menuFooterAbout: Array,
 		menuFooterServices: Array,
 		menuFooterSupport: Array,
-		contacts: Array,
+		contacts: Object,
 	},
 };
 </script>
@@ -116,18 +116,7 @@ div.footer {
 					}
 				}
 				button {
-                    width: fit-content;
-					text-transform: uppercase;
-					margin: 10px;
-					border: 1px solid $elf-green;
-					border-radius: 5px;
-					padding: 10px 15px;
-                    background-color: transparent;
-                    a {
-                        font-weight: 600;
-						color: #fff;
-						text-decoration: none;
-					}
+                   @include button(transparent)
 				}
 			}
 			.menu {
@@ -161,6 +150,7 @@ div.footer {
 		}
 	}
 	&_bot {
+        padding: 0 10%;
 		background-color: $footer-bot;
         display: flex;
         justify-content: space-around;

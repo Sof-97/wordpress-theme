@@ -20,19 +20,21 @@
 			</div>
 			<div class="section_right">
 				<div class="info">
-					<h4> <i class="fa-solid fa-award"></i>Tradition</h4>
+					<h4><i class="fa-solid fa-award"></i>Tradition</h4>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipiscing elit.
 					</p>
 				</div>
 				<div class="info">
-					<h4> <i class="fa-solid fa-lock"></i>Security</h4>
+					<h4><i class="fa-solid fa-lock"></i>Security</h4>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipiscing elit.
 					</p>
 				</div>
 				<div class="info">
-					<h4><i class="fa-solid fa-pen-to-square"></i>Certificate</h4>
+					<h4>
+						<i class="fa-solid fa-pen-to-square"></i>Certificate
+					</h4>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipiscing elit.
 					</p>
@@ -55,61 +57,44 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../style/variables.scss";
+@import "../../style/mixin.scss";
 div.about {
-	padding: 100px 0;
 	background-color: $woodsmoke;
 	.section {
-		width: 65%;
-		margin: 0 auto;
+		@include container;
 		display: flex;
 		& > div {
 			width: 50%;
 			color: #fff;
 		}
 		&_left {
-            padding-right: 60px;
-			h5 {
-				color: $fountain-blue;
-			}
-			h2 {
-				font-family: Poppins;
-				font-weight: 700;
-				font-size: 4rem;
-				margin: 15px 0;
-				span {
-					background-color: $company;
-					border-radius: 5px;
-					padding: 5px 10px;
-				}
-			}
+			padding-right: 60px;
+			@include sectionTitle(rgba($elf-green, 0.2), #fff, #fff);
 			p {
-                opacity: 0.8;
 				margin: 20px 0;
-                line-height: 1.5rem;
+				line-height: 1.5rem;
 			}
 		}
 		&_right {
 			display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            line-height: 1.4rem;
-            > *{
-                flex-basis: calc(100%/2 - 20px);
-            }
-            h4{
-                font-family: Montserrat;
-                font-weight: 700;
-                font-size: 1.5rem;
-                margin: 20px 0 ;
-                i{  
-                    color: $fountain-blue;
-                    margin-right: 10px;
-                }
-            }
-            p{
-                opacity: 0.8;
-            }
+			flex-wrap: wrap;
+			justify-content: space-between;
+			line-height: 1.4rem;
+			> * {
+				flex-basis: calc(100% / 2 - 20px);
+			}
+			h4 {
+				font-size: 1.5rem;
+				margin: 20px 0;
+				i {
+					color: $fountain-blue;
+					margin-right: 10px;
+				}
+			}
 		}
+	}
+	p {
+		opacity: 0.8;
 	}
 }
 </style>

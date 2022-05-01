@@ -1,11 +1,52 @@
-@mixin menu($orientation){
-    list-style: none;
-    display: flex;
-    flex-direction: #{$orientation};
-    li{
-        cursor: pointer;
-        a{
-            text-decoration: none;
-        }
-    }
+@mixin menu($orientation) {
+	list-style: none;
+	display: flex;
+	flex-direction: #{$orientation};
+	li {
+		cursor: pointer;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+@mixin sectionTitle($spanColor, $title, $spanTitle) {
+	h5 {
+		color: $fountain-blue;
+	}
+	h2 {
+		color: $title;
+		font-family: Poppins;
+		font-weight: 800;
+		font-size: 3rem;
+		margin: 15px 0;
+		span {
+			color: $spanTitle;
+			font-family: Poppins, sans-serif;
+			background-color: $spanColor;
+			border-radius: 5px;
+			padding: 5px 10px;
+		}
+	}
+}
+
+@mixin button($bg){
+	display: inline-block;
+	color: #fff;
+	border: 1px solid $elf-green;
+	border-radius: 5px;
+	padding: 10px 15px;
+	background-color: $bg;
+	width: fit-content;
+	a {
+		color: #fff;
+		text-decoration: none;
+        text-transform: uppercase;
+	}
+}
+
+@mixin container {
+    width: 65%;
+    margin: 0 auto;
+    padding: 100px 0;
 }
