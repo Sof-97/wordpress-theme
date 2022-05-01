@@ -79,6 +79,7 @@ div.container {
 				display: none;
 			}
 			div {
+				position: relative;
 				text-align: center;
 				cursor: grab;
 				min-width: calc(100% / 3 - 20px);
@@ -90,11 +91,30 @@ div.container {
 				display: flex;
 				justify-content: center;
 				align-items: flex-end;
-				padding: 40px;
+				padding: 20px;
 				background-color: rgba(#fff, $alpha: 1);
-				h4 {
+				@media screen and (max-width: 820px) {
+					padding: 20px;
+				}
+				h4 {z-index: 1;
 					font-size: 1.5rem;
 					color: #fff;
+					text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.8);
+					@media screen and (max-width: 820px) {
+						font-size: 1rem;
+					}
+				}
+				&::before {
+					content: "";
+					width: 100%;
+					border-radius: 15px;
+					height: 100%;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					background: #000;
+					opacity: 0.25;
 				}
 			}
 		}

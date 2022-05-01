@@ -3,10 +3,15 @@
 		<div class="footer_top">
 			<div class="container">
 				<div class="contacts">
-					<div class="logo">
-						<p><span>nex</span>gen</p>
+					<div>
+						<div class="logo">
+							<p><span>nex</span>gen</p>
+						</div>
+						<p>
+							A Functional HTML Template for Corporate & Business.
+						</p>
 					</div>
-					<p>A Functional HTML Template for Corporate & Business.</p>
+					<div>
 					<p><i class="fa-solid fa-phone"></i>{{ contacts.phone }}</p>
 					<p>
 						<i class="fa-solid fa-envelope"></i>{{ contacts.email }}
@@ -15,6 +20,7 @@
 						<i class="fa-solid fa-location-dot"></i
 						>{{ contacts.address }}
 					</p>
+					</div>
 					<button>
 						<a href="#"> get in touch </a>
 					</button>
@@ -54,9 +60,9 @@
 			</div>
 		</div>
 		<div class="footer_bot">
-            <p>Enjoy the low price. We are tracking any intention of piracy.</p>
-            <p>© 2021 NEXGEN is Proudly Powered by <a href="#">Gerardo</a>.</p>
-        </div>
+			<p>Enjoy the low price. We are tracking any intention of piracy.</p>
+			<p>© 2021 NEXGEN is Proudly Powered by <a href="#">Gerardo</a>.</p>
+		</div>
 	</div>
 </template>
 <script>
@@ -81,12 +87,23 @@ div.footer {
 		div.container {
 			display: flex;
 			justify-content: space-between;
+			@media screen and (max-width: 820px) {
+				flex-direction: column;
+			}
 			width: 65%;
 			margin: 0 auto;
 			color: #fff;
+			@media screen and (max-width: 820px) {
+				width: 80%;
+			}
 			.contacts {
 				display: flex;
 				flex-direction: column;
+				@media screen and (max-width: 820px) {
+					flex-direction: row;
+					justify-content: space-between;
+					width: 100%;
+				}
 				width: 30%;
 				padding: 30px 30px 30px 0;
 				.logo {
@@ -116,13 +133,17 @@ div.footer {
 					}
 				}
 				button {
-                   @include button(transparent)
+					@include button(transparent);
+					height: fit-content;
 				}
 			}
 			.menu {
 				width: 70%;
 				display: flex;
 				justify-content: space-between;
+				@media screen and (max-width: 820px) {
+					width: 100%;
+				}
 				div {
 					background-color: rgba($color: #fff, $alpha: 0.05);
 					border-radius: 10px;
@@ -131,6 +152,10 @@ div.footer {
 					flex-direction: column;
 					width: calc(100% / 3 - 20px);
 					margin: 10px 0;
+					@media screen and (max-width: 820px) {
+						width: calc(100% / 3 - 5px);
+						margin: 5px 0;
+					}
 					ul {
 						@include menu(column);
 						li {
@@ -150,20 +175,20 @@ div.footer {
 		}
 	}
 	&_bot {
-        padding: 0 10%;
+		padding: 0 10%;
 		background-color: $footer-bot;
-        display: flex;
-        justify-content: space-around;
-        color: #fff;
-        p{
-            font-size: 0.9rem;
-        opacity: 0.6;
-        padding: 20px 0;
-        a{
-            color: $fountain-blue;
-            text-decoration: none;
-        }
-        }
+		display: flex;
+		justify-content: space-around;
+		color: #fff;
+		p {
+			font-size: 0.9rem;
+			opacity: 0.6;
+			padding: 20px 0;
+			a {
+				color: $fountain-blue;
+				text-decoration: none;
+			}
+		}
 	}
 }
 </style>

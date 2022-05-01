@@ -38,7 +38,7 @@ export default {
 	props: {
 		contacts: Object,
 		menu: Array,
-	},
+	}
 };
 </script>
 
@@ -49,6 +49,9 @@ export default {
 .header {
 	position: relative;
 	&_top {
+		@media screen and (max-width: 820px) {
+			display: none;
+		}
 		display: flex;
 		justify-content: space-around;
 		color: rgba($color: #fff, $alpha: 0.7);
@@ -79,7 +82,14 @@ export default {
 		text-transform: uppercase;
 		background-color: transparent;
 		padding: 10px;
+		@media screen and (max-width: 820px){
+			justify-content: start;
+			padding: 20px;
+		}
 		.logo {
+			@media screen and (max-width: 820px){
+				margin-left: 10%;
+			}
 			font-weight: 800;
 			letter-spacing: 3px;
 			font-size: 1.4rem;
@@ -94,6 +104,9 @@ export default {
 			@include menu(row);
 			margin-right: 100px;
 			li {
+				@media screen and (max-width: 820px){
+					display: none;
+			}
 				margin: 0 12px;
 				padding: 10px;
 				a {

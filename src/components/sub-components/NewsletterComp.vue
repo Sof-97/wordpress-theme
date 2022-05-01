@@ -35,6 +35,9 @@ div.container {
 		display: flex;
 		justify-content: space-between;
 		width: 50%;
+		@media screen and (max-width: 820px){
+			width: 70%;
+		}
 		margin: 0 auto;
 		&_left {
 			width: 60%;

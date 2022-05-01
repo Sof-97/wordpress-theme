@@ -50,7 +50,14 @@ div.jumbotron {
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: 50%;
+	@media screen and (max-width: 820px){
+		height: 100vh;
+
+	}
 	&_row {
+		@media screen and (max-width: 820px){
+			margin-left: 42%;
+		}
 		margin-left: 55%;
 		line-height: 3rem;
 		h4 {
