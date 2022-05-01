@@ -63,9 +63,15 @@ div.about {
 	.section {
 		@include container;
 		display: flex;
+		@media screen and (max-width: 400px){
+			flex-direction: column;
+			}
 		& > div {
 			width: 50%;
 			color: #fff;
+			@media screen and (max-width: 400px){
+				width: 90%;
+			}
 		}
 		&_left {
 			padding-right: 60px;
@@ -79,6 +85,9 @@ div.about {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			@media screen and (max-width: 820px){
+				justify-content: space-around;
+			}	
 			line-height: 1.4rem;
 			> * {
 				flex-basis: calc(100% / 2 - 20px);
@@ -88,7 +97,7 @@ div.about {
 				margin: 20px 0;
 				i {
 					color: $fountain-blue;
-					margin-right: 10px;
+					margin: 10px;
 				}
 			}
 		}

@@ -67,9 +67,15 @@ div.container {
 		display: flex;
 		@include container;
 		justify-content: space-between;
+		@media screen and (max-width: 400px){
+			flex-direction: column;
+			}
 		&_left {
 			width: 65%;
 			@include sectionTitle(rgba($elf-green, 0.2), #fff, #fff);
+			@media screen and (max-width: 400px){
+				width: 100%;
+			}
 			p {
 				color: #fff;
 				opacity: 0.8;
@@ -128,6 +134,9 @@ div.container {
 			border-radius: 8px;
 			padding: 25px;
 			margin: 2.5rem 0;
+			@media screen and (max-width: 400px){
+				width: 100%;
+			}
 			h5 {
 				font-size: 1.7rem;
 			}

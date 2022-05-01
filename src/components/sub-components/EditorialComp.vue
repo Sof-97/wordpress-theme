@@ -82,7 +82,7 @@ div.container {
 				position: relative;
 				text-align: center;
 				cursor: grab;
-				min-width: calc(100% / 3 - 20px);
+				width: calc(100% / 3 - 20px);
 				height: calc((((100vw) / 100) * 65) / 3 - 20px);
 				margin: 0 10px;
 				border-radius: 15px;
@@ -93,10 +93,13 @@ div.container {
 				align-items: flex-end;
 				padding: 20px;
 				background-color: rgba(#fff, $alpha: 1);
-				@media screen and (max-width: 820px) {
+				@media screen and (max-width: 400px) {
+					min-width: calc(100% - 20px);
+					height: calc(100vw - 20px) ;
 					padding: 20px;
 				}
-				h4 {z-index: 1;
+				h4 {
+					z-index: 1;
 					font-size: 1.5rem;
 					color: #fff;
 					text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.8);

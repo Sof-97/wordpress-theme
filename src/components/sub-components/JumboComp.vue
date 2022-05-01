@@ -52,17 +52,23 @@ div.jumbotron {
 	background-position-y: 50%;
 	@media screen and (max-width: 820px){
 		height: 100vh;
-
 	}
 	&_row {
 		@media screen and (max-width: 820px){
 			margin-left: 42%;
+		}
+		@media screen and (max-width: 400px){
+			margin: 0;
+			padding: 5px;
 		}
 		margin-left: 55%;
 		line-height: 3rem;
 		h4 {
 			margin-left: 10px;
 			color: $fountain-blue;
+			@media screen and (max-width: 400px){
+				font-size: 0.8rem;
+			}
 		}
 		h1 {
 			margin: 20px 10px;
@@ -71,6 +77,9 @@ div.jumbotron {
 			font-weight: 900;
 			font-size: 4.5rem;
 			line-height: 4.5rem;
+			@media screen and (max-width: 400px){
+				font-size: 3.5rem;
+			}
 		}
 		.form {
 			display: flex;

@@ -3,7 +3,7 @@
 		<!-- Title Section -->
 		<div class="title">
 			<h5>HOW IT WORKS IN PRACTICE</h5>
-			<h2><span>Process</span>Management</h2>
+			<h2><span>Process</span> Management</h2>
 			<p>
 				We work with innovative methodologies to ensure that the entire
 				reformatting process is done from start to finish as planned.
@@ -72,6 +72,9 @@ div.container {
 		width: 100%;
 		margin: 80px 0 20px 0;
 		padding: 0 10%;
+		@media screen and (max-width: 400px){
+			display: none;	
+		}
 		div {
 			display: flex;
 			justify-content: center;
@@ -90,6 +93,9 @@ div.container {
 			justify-content: space-around;
 			padding: 0 10%;
 			text-align: center;
+			@media screen and (max-width: 400px){
+				flex-direction: column;
+			}
 			h5 {
 				font-size: 1.3rem;
 				margin: 15px 0;
@@ -100,6 +106,9 @@ div.container {
 			}
 			> div {
 				width: calc(100% / 5 - 20px);
+				@media screen and (max-width: 400px){
+					width: 100%;
+			}
 			}
 		}
 	}

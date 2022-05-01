@@ -38,6 +38,9 @@ div.container {
 		@media screen and (max-width: 820px){
 			width: 70%;
 		}
+		@media screen and (max-width: 400px){
+			flex-direction: column;
+			}
 		margin: 0 auto;
 		&_left {
 			width: 60%;
@@ -46,11 +49,17 @@ div.container {
 				color: #fff;
 				opacity: 0.8;
 			}
+			@media screen and (max-width: 400px){
+				width: 100%;
+			}
 		}
 		&_right {
 			display: flex;
 			flex-direction: column;
 			width: 35%;
+			@media screen and (max-width: 400px){
+				width: 100%;
+			}
 			input {
 				width: 100%;
 				margin: 10px 0;

@@ -12,14 +12,18 @@
 						</p>
 					</div>
 					<div>
-					<p><i class="fa-solid fa-phone"></i>{{ contacts.phone }}</p>
-					<p>
-						<i class="fa-solid fa-envelope"></i>{{ contacts.email }}
-					</p>
-					<p>
-						<i class="fa-solid fa-location-dot"></i
-						>{{ contacts.address }}
-					</p>
+						<p>
+							<i class="fa-solid fa-phone"></i
+							>{{ contacts.phone }}
+						</p>
+						<p>
+							<i class="fa-solid fa-envelope"></i
+							>{{ contacts.email }}
+						</p>
+						<p>
+							<i class="fa-solid fa-location-dot"></i
+							>{{ contacts.address }}
+						</p>
 					</div>
 					<button>
 						<a href="#"> get in touch </a>
@@ -104,6 +108,9 @@ div.footer {
 					justify-content: space-between;
 					width: 100%;
 				}
+				@media screen and (max-width: 400px) {
+					flex-wrap: wrap;
+				}
 				width: 30%;
 				padding: 30px 30px 30px 0;
 				.logo {
@@ -140,6 +147,9 @@ div.footer {
 			.menu {
 				width: 70%;
 				display: flex;
+				@media screen and (max-width: 400px) {
+					flex-direction: column;
+				}
 				justify-content: space-between;
 				@media screen and (max-width: 820px) {
 					width: 100%;
@@ -155,6 +165,9 @@ div.footer {
 					@media screen and (max-width: 820px) {
 						width: calc(100% / 3 - 5px);
 						margin: 5px 0;
+					}
+					@media screen and (max-width: 400px) {
+						width: 100%;
 					}
 					ul {
 						@include menu(column);
