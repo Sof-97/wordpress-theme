@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="container" id="blog">
 		<div class="row">
 			<div>
 				<h5>OUR EDITORIAL CONTENT</h5>
@@ -82,7 +82,7 @@ div.container {
 				position: relative;
 				text-align: center;
 				cursor: grab;
-				width: calc(100% / 3 - 20px);
+				min-width: calc(100% / 3 - 20px);
 				height: calc((((100vw) / 100) * 65) / 3 - 20px);
 				margin: 0 10px;
 				border-radius: 15px;
@@ -92,17 +92,24 @@ div.container {
 				justify-content: center;
 				align-items: flex-end;
 				padding: 20px;
-				background-color: rgba(#fff, $alpha: 1);
+				@media screen and (max-width: 820px) {
+					min-width: calc(100% / 2 - 20px);
+					height: calc((((100vw) / 100) * 85) / 2 - 20px);
+				}
 				@media screen and (max-width: 400px) {
 					min-width: calc(100% - 20px);
-					height: calc(100vw - 20px) ;
+					height: calc(100vw - 20px);
 					padding: 20px;
+				}
+				&:hover h4 {
+					transform: translate(0, -100%);
 				}
 				h4 {
 					z-index: 1;
 					font-size: 1.5rem;
 					color: #fff;
 					text-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.8);
+					transition: all 0.5s ease-in-out;
 					@media screen and (max-width: 820px) {
 						font-size: 1rem;
 					}

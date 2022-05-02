@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="container" id="team">
 		<div class="row">
 			<div class="row_left">
 				<h5>WE LIKE WHAT WE DO</h5>
@@ -122,6 +122,10 @@ div.container {
 							background-color: rgba($elf-green, $alpha: 0.4);
 							width: 2.2rem;
 							height: 2.2rem;
+							transition: all 0.25s ease-in-out;
+							&:hover{
+								transform: scale(1.1);
+							}
 						}
 					}
 				}

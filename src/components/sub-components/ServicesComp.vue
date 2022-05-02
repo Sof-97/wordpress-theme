@@ -1,5 +1,5 @@
 <template>
-	<div class="bg">
+	<div class="bg" id="services">
 		<div class="services">
 			<div>
 				<h5>OUR BUSINESS AREAS</h5>
@@ -140,11 +140,19 @@ div.cards {
 				}
 			}
 		}
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			transform: scale(1.2);
+		}
+		&:hover div i {
+			opacity: 1;
+		}
 	}
 	& > * {
 		i {
 			font-size: 2rem;
 			color: $elf-green;
+			transition: all 0.5s ease-in-out;
 		}
 		display: flex;
 		flex-direction: column;
@@ -153,9 +161,9 @@ div.cards {
 		border-radius: 10px;
 		background-color: #fff;
 		width: calc(100% / 3 - 30px);
-		@media screen and (max-width: 400px){
+		@media screen and (max-width: 400px) {
 			width: 100%;
-			}
+		}
 		p {
 			width: 100% !important;
 		}

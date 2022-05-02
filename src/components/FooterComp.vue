@@ -157,11 +157,11 @@ div.footer {
 				div {
 					background-color: rgba($color: #fff, $alpha: 0.05);
 					border-radius: 10px;
-					padding: 40px;
+					padding: 30px;
 					display: flex;
 					flex-direction: column;
-					width: calc(100% / 3 - 20px);
-					margin: 10px 0;
+					width: calc(100% / 3 - 16px);
+					margin: 8px 0;
 					@media screen and (max-width: 820px) {
 						width: calc(100% / 3 - 5px);
 						margin: 5px 0;
@@ -174,9 +174,12 @@ div.footer {
 						li {
 							opacity: 0.7;
 							i {
-								margin-right: 1rem;
+								margin-right: 0.5rem;
 							}
 							margin: 0.5rem 0;
+							&:hover{
+								color: $elf-green;
+							}
 						}
 					}
 					h4 {

@@ -1,5 +1,5 @@
 <template>
-	<div class="about">
+	<div id="about">
 		<div class="section">
 			<div class="section_left">
 				<h5>ABOUT THE NETWORK</h5>
@@ -58,7 +58,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../style/variables.scss";
 @import "../../style/mixin.scss";
-div.about {
+div#about {
 	background-color: $woodsmoke;
 	.section {
 		@include container;

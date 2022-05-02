@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="container" id="process">
 		<!-- Title Section -->
 		<div class="title">
 			<h5>HOW IT WORKS IN PRACTICE</h5>
@@ -59,6 +59,11 @@ div.container {
 			$text-color,
 			$elf-green
 		);
+		h2{
+			@media screen and (max-width: 400px) {
+				font-size: 2.8rem;
+			}
+		}
 		p {
 			color: $lorem;
 		}
@@ -87,6 +92,12 @@ div.container {
 			bottom: 15px;
 			color: $elf-green;
 			font-weight: bolder;
+			cursor: pointer;
+			transition: all 0.5s ease-in-out;
+			&:hover{
+				color: #fff;
+				background-color: $elf-green;
+			}
 		}
 		&_columns {
 			display: flex;
