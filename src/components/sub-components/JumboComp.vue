@@ -86,6 +86,9 @@ div.jumbotron {
 			flex-wrap: wrap;
 			> * {
 				width: calc(35% - 20px);
+				@media screen and (max-width: 400px) {
+					width: calc(50% - 20px);
+				}
 				margin: 10px;
 				color: $cloudy;
 				border-radius: 3px;
