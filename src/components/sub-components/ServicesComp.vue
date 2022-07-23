@@ -161,7 +161,7 @@ div.cards {
 		border-radius: 10px;
 		background-color: #fff;
 		width: calc(100% / 3 - 30px);
-		@media screen and (max-width: 400px) {
+		@media screen and (max-width: 550px) {
 			width: 100%;
 		}
 		p {

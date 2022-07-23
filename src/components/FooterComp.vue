@@ -65,7 +65,7 @@
 		</div>
 		<div class="footer_bot">
 			<p>Enjoy the low price. We are tracking any intention of piracy.</p>
-			<p>© 2021 NEXGEN is Proudly Powered by <a href="#">Gerardo</a>.</p>
+			<p>© 2021 NEXGEN is Proudly Powered by <a href="https://www.linkedin.com/in/gerardo-calia-00a745223/">Gerardo</a>.</p>
 		</div>
 	</div>
 </template>
@@ -91,24 +91,24 @@ div.footer {
 		div.container {
 			display: flex;
 			justify-content: space-between;
-			@media screen and (max-width: 820px) {
+			@media screen and (max-width: 920px) {
 				flex-direction: column;
 			}
 			width: 65%;
 			margin: 0 auto;
 			color: #fff;
-			@media screen and (max-width: 820px) {
+			@media screen and (max-width: 1400px) {
 				width: 80%;
 			}
 			.contacts {
 				display: flex;
 				flex-direction: column;
-				@media screen and (max-width: 820px) {
+				@media screen and (max-width: 920px) {
 					flex-direction: row;
 					justify-content: space-between;
 					width: 100%;
 				}
-				@media screen and (max-width: 400px) {
+				@media screen and (max-width: 550px) {
 					flex-wrap: wrap;
 				}
 				width: 30%;
@@ -147,11 +147,11 @@ div.footer {
 			.menu {
 				width: 70%;
 				display: flex;
-				@media screen and (max-width: 400px) {
+				@media screen and (max-width: 550px) {
 					flex-direction: column;
 				}
 				justify-content: space-between;
-				@media screen and (max-width: 820px) {
+				@media screen and (max-width: 920px) {
 					width: 100%;
 				}
 				div {
@@ -166,7 +166,7 @@ div.footer {
 						width: calc(100% / 3 - 5px);
 						margin: 5px 0;
 					}
-					@media screen and (max-width: 400px) {
+					@media screen and (max-width: 550px) {
 						width: 100%;
 					}
 					ul {

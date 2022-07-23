@@ -32,91 +32,98 @@
 	</div>
 </template>
 <script>
-export default {
-	name: "JumboComp",
-};
+	export default {
+		name: "JumboComp",
+	};
 </script>
 
 <style lang="scss" scoped>
-@import "../../style/variables.scss";
-@import "../../style/mixin.scss";
+	@import "../../style/variables.scss";
+	@import "../../style/mixin.scss";
 
-div.jumbotron {
-	display: flex;
-	align-items: center;
-	height: calc(100vh - 40px);
-	background-image: url("../../assets/img/bg-6.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: 50%;
-	@media screen and (max-width: 820px){
-		height: 100vh;
-	}
-	&_row {
-		@media screen and (max-width: 820px){
-			margin-left: 42%;
+	div.jumbotron {
+		display: flex;
+		align-items: center;
+		height: calc(100vh - 40px);
+		background-image: url("../../assets/img/bg-6.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position-x: center;
+		background-position-y: 50%;
+		@media screen and (max-width: 820px) {
+			height: 100vh;
 		}
-		@media screen and (max-width: 400px){
-			margin: 0;
-			padding: 5px;
-		}
-		margin-left: 55%;
-		line-height: 3rem;
-		h4 {
-			margin-left: 10px;
-			color: $fountain-blue;
-			@media screen and (max-width: 400px){
-				font-size: 0.8rem;
+		&_row {
+			@media screen and (max-width: 1150px) {
+				margin-left: 45%;
 			}
-		}
-		h1 {
-			margin: 20px 10px;
-			color: $text-color;
-			font-family: Poppins;
-			font-weight: 900;
-			font-size: 4.5rem;
-			line-height: 4.5rem;
-			@media screen and (max-width: 400px){
-				font-size: 3.5rem;
+			@media screen and (max-width: 820px) {
+				margin-left: 42%;
 			}
-		}
-		.form {
-			display: flex;
-			flex-wrap: wrap;
-			> * {
-				width: calc(35% - 20px);
+			@media screen and (max-width: 750px) {
+				margin-left: auto;
+				margin-right: 2%;
+			}
+			max-width: fit-content;
+			margin-left: 55%;
+			line-height: 3rem;
+			h4 {
+				margin-left: 10px;
+				color: $fountain-blue;
 				@media screen and (max-width: 400px) {
-					width: calc(50% - 20px);
-				}
-				margin: 10px;
-				color: $cloudy;
-				border-radius: 3px;
-				border: 2px solid transparent;
-				padding: 13px;
-				background-color: $input;
-				&:focus {
-					outline: none;
-					border: 2px solid $elf-green;
-				}
-				option {
-					color: rgba($color: #000000, $alpha: 0.7);
+					font-size: 0.8rem;
 				}
 			}
-			+ div {
+			h1 {
+				margin: 20px 10px;
+				color: $text-color;
+				font-family: Poppins;
+				font-weight: 900;
+				font-size: 4.5rem;
+				line-height: 4.5rem;
+				@media screen and (max-width: 550px) {
+					font-size: 3.5rem;
+				}
+			}
+			>*{
+				max-width: inherit;
+			}
+			.form {
 				display: flex;
-				button {
-					@include button($elf-green);
+				flex-wrap: wrap;
+				> * {
+					width: calc(35% - 20px);
+					@media screen and (max-width: 550px) {
+						width: calc(50% - 20px);
+					}
 					margin: 10px;
-					&:last-child {
-						background-color: transparent;
-						a {
-							color: $elf-green;
+					color: $cloudy;
+					border-radius: 3px;
+					border: 2px solid transparent;
+					padding: 13px;
+					background-color: $input;
+					&:focus {
+						outline: none;
+						border: 2px solid $elf-green;
+					}
+					option {
+						color: rgba($color: #000000, $alpha: 0.7);
+					}
+				}
+				+ div {
+					display: flex;
+					button {
+						@include button($elf-green);
+						margin: 10px;
+						&:last-child {
+							background-color: transparent;
+							a {
+								color: $elf-green;
+							}
 						}
 					}
 				}
 			}
 		}
 	}
-}
 </style>

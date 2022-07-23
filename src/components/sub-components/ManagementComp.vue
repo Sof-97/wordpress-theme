@@ -60,7 +60,7 @@ div.container {
 			$elf-green
 		);
 		h2{
-			@media screen and (max-width: 400px) {
+			@media screen and (max-width: 550px) {
 				font-size: 2.8rem;
 			}
 		}
@@ -77,7 +77,7 @@ div.container {
 		width: 100%;
 		margin: 80px 0 20px 0;
 		padding: 0 10%;
-		@media screen and (max-width: 400px){
+		@media screen and (max-width: 550px){
 			display: none;	
 		}
 		div {
@@ -104,7 +104,7 @@ div.container {
 			justify-content: space-around;
 			padding: 0 10%;
 			text-align: center;
-			@media screen and (max-width: 400px){
+			@media screen and (max-width: 550px){
 				flex-direction: column;
 			}
 			h5 {
@@ -117,7 +117,7 @@ div.container {
 			}
 			> div {
 				width: calc(100% / 5 - 20px);
-				@media screen and (max-width: 400px){
+				@media screen and (max-width: 550px){
 					width: 100%;
 			}
 			}

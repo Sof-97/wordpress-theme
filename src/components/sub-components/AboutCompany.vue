@@ -63,13 +63,13 @@ div#about {
 	.section {
 		@include container;
 		display: flex;
-		@media screen and (max-width: 400px){
+		@media screen and (max-width: 550px){
 			flex-direction: column;
 			}
 		& > div {
 			width: 50%;
 			color: #fff;
-			@media screen and (max-width: 400px){
+			@media screen and (max-width: 550px){
 				width: 90%;
 			}
 		}

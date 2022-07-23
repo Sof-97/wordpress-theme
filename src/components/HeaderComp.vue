@@ -69,6 +69,9 @@
 	.header {
 		position: relative;
 		&_top {
+			@media screen and (max-width:980px){
+				font-size: 0.7rem;
+			}
 			@media screen and (max-width: 820px) {
 				display: none;
 			}
@@ -124,8 +127,11 @@
 			.menu {
 				@include menu(row);
 				margin-right: 100px;
+				@media screen and (max-width:1200px) {
+					margin: 0;
+				}
 				li {
-					@media screen and (max-width: 820px) {
+					@media screen and (max-width: 920px) {
 						display: none;
 					}
 					margin: 0 12px;
